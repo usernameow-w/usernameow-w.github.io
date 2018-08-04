@@ -1,0 +1,65 @@
+@font-face {
+ font-family: Cleanvertising;
+ src: url('../fonts/cleanvel-webfont.woff2') format('woff2'),
+      url('../fonts/cleanvel-webfont.woff') format('woff'); 
+}
+body{
+  background: url(../img/backgr.png);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 100vh;
+  font-family: Cleanvertising, Arial, sans-serif;  
+  display: grid;
+  grid-template-columns: 145px 1fr;
+  grid-template-rows: 10vh 1fr 10vh;
+  grid-template-areas: "a a"
+                       "b c"
+                       "b j";
+}
+
+header{
+  grid-area: a;
+  background-color: #3c3f49;
+}
+h1 {
+  margin: 0;
+  text-align: center;
+  color: #F4F5F2;
+  font-size: 3.25em;
+  letter-spacing: 0.1em;
+  font-weight: normal;
+}
+
+nav{
+  grid-area: b;
+  background-color: #3c3f49;
+}
+nav a {
+  display: flex;
+  padding: 0.6rem 1.55rem;
+  font-size: 1.7rem;
+  text-decoration: none;
+  color: #F4F5F2;
+}
+
+div {
+  min-width: 70em;
+  max-width: 80em;
+  grid-area: c;
+  display: flex;
+  flex-flow: row wrap;
+  margin-top: 2vh;
+  margin-left: 0.7vw;
+}
+div a {
+  display: flex;
+  margin: 0 0.7vmax;
+  margin-bottom: 20px;
+}
+img {
+  width:260px;
+  height:370px;
+  border-radius: 7px;
+}
