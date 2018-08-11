@@ -43,6 +43,11 @@ nav a {
   text-decoration: none;
   color: #F4F5F2;
 }
+nav a:hover {
+	background: #eae9e8;
+	color: #01A58D;
+	padding-left: 40px;
+}
 
 div {
   min-width: 70em;
